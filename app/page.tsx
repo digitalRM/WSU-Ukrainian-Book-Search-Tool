@@ -42,7 +42,7 @@ export default function Home() {
       .then((data) => {
         // Filter out any libraries with missing required fields
         const validLibraries = (data["Updated Data"] || []).filter(
-          (lib: any) =>
+          (lib: Partial<Library>) =>
             lib &&
             typeof lib.institutionName === "string" &&
             typeof lib.institutionIdentifier === "string" &&

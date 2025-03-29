@@ -34,14 +34,14 @@ export default function Leaderboards() {
       .then((data) => {
         const validLibraries = (data["Updated Data"] || [])
           .filter(
-            (lib: any) =>
+            (lib: Partial<Library>) =>
               lib &&
               typeof lib.institutionName === "string" &&
               typeof lib.institutionIdentifier === "string" &&
               typeof lib.libraryType === "string" &&
               typeof lib.n === "string"
           )
-          .map((lib: Library) => ({
+          .map((lib: Partial<Library>) => ({
             ...lib,
             n: lib.n || "0",
           }));

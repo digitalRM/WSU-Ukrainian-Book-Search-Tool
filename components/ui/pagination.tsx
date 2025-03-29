@@ -17,7 +17,10 @@ const PaginationContent = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLUListElement>) => (
-  <ul className="flex flex-row items-center gap-1" {...props} />
+  <ul
+    className={`flex flex-row items-center gap-1 ${className || ""}`}
+    {...props}
+  />
 );
 
 const PaginationItem = ({
