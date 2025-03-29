@@ -34,7 +34,7 @@ export function SearchBar({
               value={searchTerm}
               onChange={(e) => onSearchChange(e.target.value)}
               placeholder="Search libraries by name, city, or country..."
-              className="w-full px-4 py-3 rounded-lg bg-white/75 border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-white tracking-[-0.015em]"
+              className="w-full px-4 py-3 rounded-lg text-xs sm:text-base bg-white/75 border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-white tracking-[-0.015em]"
             />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3">
               <svg
