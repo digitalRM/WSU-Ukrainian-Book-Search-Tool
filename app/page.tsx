@@ -95,12 +95,12 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-50 p-4 lg:p-8">
+    <div className="min-h-screen bg-neutral-50 p-4 lg:p-8 lg:rounded-b-4xl border">
       <main className="max-w-7xl mx-auto">
         <div className="space-y-6">
           <div className="space-y-4 lg:mt-8">
-            <div className="flex items-start justify-between">
-              <h1 className="text-2xl font-semibold text-neutral-900 tracking-tight">
+            <div className="flex items-start justify-between sm:flex-row flex-col gap-4">
+              <h1 className="text-2xl font-semibold text-neutral-900 tracking-tight text-balance">
                 Ukrainian Collection Search Tool
               </h1>
               <Link
@@ -180,13 +180,13 @@ export default function Home() {
                       </PaginationItem>
 
                       {showLeftEllipsis && (
-                        <PaginationItem>
+                        <PaginationItem className="hidden sm:block">
                           <PaginationEllipsis />
                         </PaginationItem>
                       )}
 
                       {pages.map((page) => (
-                        <PaginationItem key={page}>
+                        <PaginationItem key={page} className="hidden sm:block">
                           <PaginationLink
                             onClick={() => handlePageChange(page)}
                             isActive={page === currentPage}
@@ -197,7 +197,7 @@ export default function Home() {
                       ))}
 
                       {showRightEllipsis && (
-                        <PaginationItem>
+                        <PaginationItem className="hidden sm:block">
                           <PaginationEllipsis />
                         </PaginationItem>
                       )}

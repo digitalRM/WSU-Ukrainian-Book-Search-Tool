@@ -26,7 +26,7 @@ export function LibraryCard({ library }: { library: Library }) {
   return (
     <div className="bg-white rounded-xl border border-neutral-200 shadow-xs flex flex-col h-full">
       <div className="p-5 flex-grow flex flex-col">
-        <div className="flex items-start justify-between gap-4">
+        <div className="flex items-start justify-between gap-4 sm:flex-row flex-col">
           <h3 className="text-base font-semibold text-neutral-900 tracking-tight">
             {library.institutionName}
           </h3>
