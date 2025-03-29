@@ -19,7 +19,8 @@ export const metadata: Metadata = {
     "Search and explore libraries in the United States (with some libraries from other countries). This project, which was originally built as an internal tool for Washington State University research through the Ukrainian Book Project, is now available to anyone for research and educational purposes.",
   openGraph: {
     title: "Ukrainian Collection Search Tool",
-    description: "Search and explore libraries with Ukrainian book collections",
+    description:
+      "Search and explore libraries in the United States (with some libraries from other countries). This project, which was originally built as an internal tool for Washington State University research through the Ukrainian Book Project, is now available to anyone for research and educational purposes.",
     images: [
       {
         url: "/OpenGraph.png",
