@@ -86,10 +86,10 @@ export default function Leaderboards() {
   const filteredLibraries = getFilteredAndSortedLibraries();
 
   return (
-    <div className="min-h-screen bg-neutral-50 p-4 lg:p-8">
+    <div className="min-h-screen bg-neutral-50 p-4 lg:p-8 border rounded-b-4xl">
       <main className="max-w-7xl mx-auto">
         <div className="space-y-6 lg:mt-8">
-          <div className="flex items-start justify-between">
+          <div className="flex items-start justify-between lg:flex-row flex-col gap-4">
             <div>
               <h1 className="text-2xl font-semibold text-neutral-900 tracking-tight">
                 Library Collection Leaderboards
