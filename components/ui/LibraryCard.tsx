@@ -28,7 +28,10 @@ export function LibraryCard({ library }: { library: Library }) {
       <div className="p-5 flex-grow flex flex-col">
         <div className="flex items-start justify-between gap-4 sm:flex-row flex-col">
           <h3 className="text-base font-semibold text-neutral-900 tracking-tight">
-            {library.institutionName}
+            {library.institutionName +
+              " (" +
+              library.institutionIdentifier +
+              ")"}
           </h3>
           <span className="px-2 py-1 text-xs font-medium rounded-md bg-neutral-100 text-neutral-600 whitespace-nowrap">
             {library.libraryType}
