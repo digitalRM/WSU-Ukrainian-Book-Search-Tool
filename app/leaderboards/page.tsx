@@ -102,6 +102,9 @@ export default function Leaderboards() {
                 as OCLC tracking is not as reliable. We are not affiliated with
                 OCLC in any way.
               </p>
+              <p className="text-sm text-neutral-600 mt-4">
+                Tool published March 28, 2025 - Data as of December 3, 2024.
+              </p>
             </div>
             <Link
               href="/"
