@@ -130,12 +130,19 @@ export default function Home() {
                 Ukrainian Book Project
               </a>
               , is now available to anyone for research and educational
-              purposes. We are not affiliated with OCLC in any way.
+              purposes. This tool is based on information collected via OCLC, so
+              holdings data may not be 100% accurate. This is especially
+              important when looking at libraries outside the US, as OCLC
+              tracking is not as reliable. We are not affiliated with OCLC in
+              any way.
             </p>
             <p className="text-sm text-neutral-600">
               Search and explore libraries in the United States (with some
               libraries from other countries). Filter by type and location to
               find specific institutions.
+            </p>
+            <p className="text-sm text-neutral-600">
+              Tool published March 28, 2025 - Data as of December 3, 2024.
             </p>
           </div>
 

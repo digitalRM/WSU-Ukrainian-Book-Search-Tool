@@ -95,12 +95,17 @@ export default function Leaderboards() {
                 Library Collection Leaderboards
               </h1>
               <p className="text-sm text-neutral-600 mt-1">
-                Top 100 libraries by number of Ukrainian books in the collection
+                Top 100 libraries by number of Ukrainian books in the
+                collection. This tool is based on information collected via
+                OCLC, so holdings data may not be 100% accurate. This is
+                especially important when looking at libraries outside the US,
+                as OCLC tracking is not as reliable. We are not affiliated with
+                OCLC in any way.
               </p>
             </div>
             <Link
               href="/"
-              className="text-sm text-blue-600 hover:text-blue-700 hover:underline"
+              className="text-sm text-blue-600 hover:text-blue-700 hover:underline min-w-fit"
             >
               ← Back to Search
             </Link>
